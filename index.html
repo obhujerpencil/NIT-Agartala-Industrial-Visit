@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="bg" src="it.jpg" alt="NIT Agartala">
+    <div class="container">
+        <h1>Welcome to NIT Agartala Industrial Visit forum</h1>
+        <p>Enter your details below</p>
+        <form action="connection.php" method="POST" id="myForm" >
+            <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+            <input type="number" name="sem" id="semester" placeholder="Enter semester" required>
+            <input type="text" name="phn" id="phone" placeholder="Enter contact number" required>
+            <input type="email" name="email" id="email" placeholder="Enter email" required>
+            <textarea name="area" id="area" cols="30" rows="18" placeholder="Tell us about your previous industrial vistit." required></textarea>
+            <button id="btn" type="submit">SUBMIT</button>
+        </form>
+    </div>
+  <script src="index.js"></script>  
+</body>
+</html>
+<!--
+INSERT INTO `visit` (`slno`, `name`, `sem`, `phone`, `mail`, `others`, `date`) VALUES ('1', 'Bikash Datta', '8', '9774406695', 'dattabikash505@gmail.com', 'I love industrial trip.', current_timestamp());
+-->
